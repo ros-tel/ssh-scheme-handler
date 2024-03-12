@@ -12,6 +12,7 @@ from urllib.parse import urlparse
 TERMINAL_SEARCH_ORDER = [
     'xfce4-terminal',
     'gnome-terminal',
+    'qterminal',
     'urxvt',
     'xterm'
 ]
@@ -59,6 +60,12 @@ TERMINAL_SPECS = {
         'executable': 'xterm',
         'flags': {
             'title': '-title',
+            'execute': '-e'
+        }
+    },
+    'qterminal': {
+        'executable': 'qterminal',
+        'flags': {
             'execute': '-e'
         }
     }
